@@ -1,7 +1,14 @@
-@(message: String)
+@(form: play.data.Form[Bar])
 
-@main("Welcome to Play") {
+@main("Welcome to Play 2.0") {
 
-    @play20.welcome(message, style = "Java")
+    <script src="@routes.Assets.at("javascripts/index.js")" type="text/javascript"></script>
+
+    <ul id="bars"></ul>
+
+    @helper.form(action = routes.Application.addBar) {
+        @helper.inputText(form("name"))
+        <input type="submit"/>
+    }
 
 }

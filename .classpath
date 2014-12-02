@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="app"/>
+	<classpathentry kind="src" path="target/scala-2.10/src_managed/main"/>
 	<classpathentry kind="src" path="test"/>
 	<classpathentry kind="lib" path="activator-launch-1.2.10.jar"/>
+	<classpathentry kind="lib" path="project/target/coffeescript/sbt-coffeescript-1.0.0.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="output" path="bin"/>
+	<classpathentry kind="output" path="target/scala-2.10/classes_managed"/>
 </classpath>
